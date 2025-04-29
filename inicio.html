@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <title>Sitio de Revistas</title>
+</head>
+<body>
+    <header>        
+        <nav>
+            <div class="nav-wrapper" style="display: flex; align-items: center; justify-content: space-between; padding: 0 20px;">
+                <h1>Sitio de Revistas</h1>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#revistas">Revistas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="../HTML/index.html" target="_blank">Ingresar</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="revistas" class="container">
+        <h2>Explora nuestras revistas</h2>
+        <div class="gallery">
+            <div class="card col s12 m6 l4">
+                <a href="https://www.xataka.com/" target="_blank">
+                    <img src="../Img/2079728.jpg" alt="Revista 1">
+                    <h3>Revista de Tecnología</h3>
+                    <p>Descubre las últimas tendencias en tecnología y gadgets.</p>
+                </a>
+            </div>
+            <div class="card col s12 m6 l4">
+                <a href="https://www.vogue.es/" target="_blank">
+                    <img src="../Img/7033003_3467565.jpg" alt="Revista 2">
+                    <h3>Revista de Moda</h3>
+                    <p>Explora las tendencias más recientes en el mundo de la moda.</p>
+                </a>
+            </div>
+            <div class="card col s12 m6 l4">
+                <a href="https://www.directoalpaladar.com/" target="_blank">
+                    <img src="../Img/4420412.jpg" alt="Revista 3">
+                    <h3>Revista de Cocina</h3>
+                    <p>Recetas deliciosas y consejos para mejorar tus habilidades culinarias.</p>
+                </a>
+            </div>
+            <div class="card col s12 m6 l4">
+                <a href="https://www.nationalgeographic.com/travel/" target="_blank">
+                    <img src="../Img/7065007.jpg" alt="Revista 4">
+                    <h3>Revista de Viajes</h3>
+                    <p>Inspírate con destinos increíbles y consejos para tus aventuras.</p>
+                </a>
+            </div>
+            <div class="card col s12 m6 l4">
+                <a href="https://www.sport.es/" target="_blank">
+                    <img src="../Img/11098025_4547795.jpg" alt="Revista 5">
+                    <h3>Revista de Deportes</h3>
+                    <p>Noticias, entrenamientos y todo lo relacionado con el mundo deportivo.</p>
+                </a>
+            </div>
+            <div class="card col s12 m6 l4">
+                <a href="https://www.artsy.net/" target="_blank">
+                    <img src="../Img/13731179_5331253.jpg" alt="Revista 6">
+                    <h3>Revista de Arte</h3>
+                    <p>Explora el mundo del arte, desde pintura hasta diseño moderno.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="contacto" class="contact-section card-panel purple lighten-5 z-depth-3">
+        <h2 class="center-align purple-text text-darken-3">Contáctanos</h2>
+        <p class="center-align grey-text text-darken-1">¿Tienes alguna pregunta o sugerencia? ¡Escríbenos!</p>
+        <form class="form form-field">
+            <div class="input-field">
+                <input type="text" id="name" name="name" placeholder=" " required>
+                <label for="name">Nombre</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" name="email" placeholder=" " required onblur="validarEmail()">
+                <label for="email">Correo Electrónico</label>
+            </div>
+            <div class="input-field">
+                <textarea id="message" name="message" class="materialize-textarea" placeholder=" " required></textarea>
+                <label for="message">Mensaje</label>
+            </div>
+            <div class="button-container">
+                <button type="button" class="btn waves-effect waves-light purple darken-3" id="submitButton" onclick="procesarFormularioContacto()">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Brayan Agudelo - Santiago Soler</p>
+    </footer>
+    <script src="../js/materialize.min.js"></script>
+    <script src="../js/inde.js" ></script>
+</body>
+</html>

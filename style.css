@@ -1,0 +1,197 @@
+:root {
+    --primary-color: #936aba;
+    --secondary-color: #936aba;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --second-background-color: #000;
+    --font-color: #fff;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+header {
+    color: var(--font-color);
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+header h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+header ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-wrapper {
+    background-color: var(--primary-color);
+}
+li a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.btnwaves-effectwaves-light {
+    background-color: var(--second-background-color);
+}
+#button {
+    background-color: var(--second-background-color);
+}
+.main-div {
+    align-items: center;
+}
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+.container {
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 20px;
+    border: 0.3rem solid var(--primary-color);
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+.date_div {
+    margin-bottom: 20px;
+}
+.datepicker {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: var(--background-color);
+}
+.datepicker-modal {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.datepicker-date-display {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    padding: 20px;
+}
+.datepicker-calendar {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.datepicker-calendar .datepicker-day-button {
+    color: var(--text-color);
+}
+.datepicker-calendar .is-selected {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+}
+.datepicker-footer {
+    background-color: var(--background-color);
+    padding: 10px;
+    text-align: right;
+}
+.datepicker-footer .btn-flat {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+.input-field {
+    position: relative;
+    margin-bottom: 10px;
+}
+.input-field label {
+    position: absolute;
+    margin-top: 10px;
+    top: 25px;
+    left: 10px;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+.input-field input:focus + label,
+.input-field textarea:focus + label,
+.input-field input:not(:placeholder-shown) + label,
+.input-field textarea:not(:placeholder-shown) + label {
+    top: -5px;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+}
+.input-field input,
+.input-field textarea {
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+    padding: 5px 10px;
+}
+.input-field input:focus,
+.input-field textarea:focus {
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: none;
+    outline: none;
+}
+input.valid,
+textarea.valid {
+    border-bottom: 1px solid var(--secondary-color);
+    box-shadow: none;
+}
+input.invalid,
+textarea.invalid {
+    border-bottom: 1px solid var(--secondary-color);
+    box-shadow: none;
+}
+.input-field .prefix {
+    color: #5c5c5c;
+}
+div.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#button {
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.15);
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--font-color);
+}
+.error {
+    background-color: red;
+}

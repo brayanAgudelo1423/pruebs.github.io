@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="../css/PRUEBA.CSS">
+    <title>Juego Crucigrama</title>
+</head>
+<body>
+    <header>        
+        <nav>
+            <div class="nav-wrapper" style="display: flex; align-items: center; justify-content: space-between; padding: 0 20px;">
+                <h1>Sitio de Revistas</h1>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="../HTML/crucigrama.html" target="_blank">Crucigrama</a></li>
+                    <li><a href="../HTML/inicio.html#revistas" target="_blank">Revistas</a></li>
+                    <li><a href="../HTML/inicio.html#contacto" target="_blank">Contacto</a></li>
+                    <li><a href="../HTML/index.html" target="_blank">Registro</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="card z-depth-3">
+            <div class="card-content">
+                <h1 class="center-align">CRUCIGRAMA</h1>
+                <div class="grid" id="crucigrama">
+                    <!-- Fila 1 -->
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">1</span><input maxlength="1" data-solution="M"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="O"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="D"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">2</span><input maxlength="1" data-solution="A"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <!-- Fila 2 -->
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">1/2</span><input maxlength="1" data-solution="C"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="I"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="N"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="E"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="R"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">4</span><input maxlength="1" data-solution="V"></div>
+                    <div class="cell block"></div>
+                    <!-- Fila 3 -->
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">3</span><input maxlength="1" data-solution="I"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="N"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="F"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="A"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="N"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="T"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="I"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="L"></div>
+                    <!-- Fila 4 -->
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="E"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="E"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="N"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="A"></div>
+                    <!-- Fila 5 -->
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="N"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">3</span><input maxlength="1" data-solution="V"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="O"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="M"></div>
+                    <!-- fila 6 -->
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">4</span><input maxlength="1" data-solution="C"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="O"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="C"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="I"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="N"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="A"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="I"></div>
+                    <!-- fila 7 -->
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="I"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">5</span><input maxlength="1" data-solution="C"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="A"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="F"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="E"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="N"></div>
+                    <!-- fila 8 -->
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="A"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="J"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">5</span><input maxlength="1" data-solution="A"></div>
+                    <!-- fila 9 -->
+                    <div class="cell purple lighten-5 z-depth-3"><span class="number">6</span><input maxlength="1" data-solution="D"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="I"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="S"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="E"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="Ñ"></div>
+                    <div class="cell purple lighten-5 z-depth-3"><input maxlength="1" data-solution="O"></div>
+                    <div class="cell block"></div>
+                    <div class="cell block"></div>
+                </div>
+                <div class="mill">
+                    <a class="waves-effect waves-light btn" onclick="verificar()" >Verificar</a>
+                    <a href="mm.html"  class="waves-effect waves-light btn">replay</a>
+                </div>
+            </div>
+            <div class="card-action">
+                <div class="clues">
+                    <div>
+                        <h3>Horizontales</h3>
+                        <ul>
+                            <li><strong>1.</strong> Publicación sobre tendencias de vestuario y estilo.</li>
+                            <li><strong>2.</strong> Publicación que reseña películas, actores y directores.</li>
+                            <li><strong>3.</strong> Revista con cuentos, juegos y actividades para los más pequeños.</li>
+                            <li><strong>4.</strong> Publicación llena de recetas, sabores y trucos gastronómicos.</li>
+                            <li><strong>5.</strong> Publicación para amantes de una bebida oscura y aromática. </li>
+                            <li><strong>6.</strong> Revista sobre creatividad visual, espacios y objetos.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Verticales</h3>
+                        <ul>
+                            <li><strong>1.</strong> Revista que explora descubrimientos y teorías del universo.</li>
+                            <li><strong>2.</strong> Revista que destaca obras, artistas y exposiciones</li>
+                            <li><strong>3.</strong> Publicación con destinos, mapas y aventuras alrededor del mundo.</li>
+                            <li><strong>4.</strong> Publicación sobre cepas, catas y maridajes.</li>
+                            <li><strong>5.</strong> Revista dedicada a mascotas, fauna y naturaleza</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Brayan Agudelo - Santiago Soler</p>
+    </footer>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.js"></script>
+    <script src="../js/prueba.js"></script>
+</body>
+</html>

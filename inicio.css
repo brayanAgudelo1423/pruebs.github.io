@@ -1,0 +1,198 @@
+:root {
+    --primary-color: #936aba;
+    --secondary-color: #936aba;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --font-color: #fff;
+}
+.error {
+    background-color: red;
+    border-bottom: 2px solid red;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+header {
+    color: var(--font-color);
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+header h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+header ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-wrapper {
+    background-color: var(--primary-color);
+}
+li a:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: var(--primary-color);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+}
+.card h3 {
+    margin: 15px;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+    font-weight: bold;
+}
+.card p {
+    margin: 0 15px 15px;
+    color: var(--font-color);
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.5;
+}
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    justify-content: center;
+    max-width: 80%;
+    border-radius: 5px;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+.contact-section {
+    width: 70%;
+    margin: 40px auto;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.form-field {
+    margin-bottom: 20px;
+}
+.form {
+    padding: 10px 80px 10px 80px;
+}
+.input-field {
+    position: relative;
+}
+.input-field label {
+    position: absolute;
+    margin-top: 10px;
+    top: 25px;
+    left: 10px;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    transition: all 0.2s ease;
+    pointer-events: none;
+}
+.input-field input:focus + label,
+.input-field textarea:focus + label,
+.input-field input:not(:placeholder-shown) + label,
+.input-field textarea:not(:placeholder-shown) + label {
+    top: -5px;
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+.input-field input,
+.input-field textarea {
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: border-color 0.3s ease;
+    padding: 5px 10px;
+}
+.input-field input:focus,
+.input-field textarea:focus {
+    border-bottom: 2px solid var(--primary-color);
+    box-shadow: none;
+    outline: none;
+}
+input.valid,
+textarea.valid {
+    border-bottom: 1px solid var(--secondary-color);
+    box-shadow: none;
+}
+input.invalid,
+textarea.invalid {
+    border-bottom: 1px solid var(--secondary-color);
+    box-shadow: none;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.contact-section button {
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.contact-section button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.15);
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}

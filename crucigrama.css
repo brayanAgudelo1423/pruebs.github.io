@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #936aba;
+    --secondary-color: #936aba;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --second-background-color: #000;
+    --font-color: #fff;
+}
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+header {
+    color: var(--font-color);
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+header h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+header ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-wrapper {
+    background-color: var(--primary-color);
+}
+li a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+.btnwaves-effectwaves-light {
+    background-color: var(--second-background-color);
+}
+#button {
+    background-color: var(--second-background-color);
+}
+.card {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: #333333;
+    border-radius: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary-color);
+}
+.card-image {
+    width: 460px;
+    height: 550px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-action button {
+    background-color: #6a1b9a;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.card-action button:hover {
+    background-color: #4a148c;
+}
+.card-action {
+    padding: 1px;
+    margin-left: 125px;
+    justify-content: center;
+    border: none;
+    margin: 0%;
+    display: flex;
+    background-color: var(--primary-color);
+}
+main {
+    flex: 1;
+}
+footer {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--font-color);
+}
+.card-content {
+    padding: 5px;
+    margin: 0%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    color: #f4f4f4;
+}
